@@ -1,4 +1,4 @@
-/* Define estilo global */
+/* Estilo global */
 * {
     margin: 0;
     padding: 0;
@@ -8,31 +8,37 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-image: url('assets/imagemfundo.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantir que o corpo ocupe a altura total da tela */
 }
 
+/* Cabeçalho */
 header {
-    background-color: #000; /* Preto */
+    background-color: #000;
     color: white;
     padding: 10px 20px;
-    text-align: center;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alinha logo e menu à esquerda */
+    justify-content: space-between;
 }
 
 .logo-container {
-    flex: 0; /* Impede que a logo ocupe mais espaço do que necessário */
+    flex: 0;
 }
 
 .logo {
-    width: 80px; /* Tamanho da logo */
+    width: 80px;
     height: auto;
 }
 
 nav {
-    flex: 3; /* Permite que o menu ocupe o restante do espaço */
+    flex: 3;
     text-align: right;
 }
 
@@ -55,104 +61,174 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Seção de Início com a Imagem de Fundo */
+/* Tela inicial */
 #inicio {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 80px 20px;
+    text-align: center;
     position: relative;
-    height: 100vh; /* Ocupa toda a altura da tela */
-    background-image: url('assests/imagemfundo.avif');
-    background-size: cover; /* Corta a imagem para cobrir toda a área */
-    background-position: center;
-    background-attachment: fixed; /* Garante que a imagem de fundo fique fixa ao rolar */
-    color: white;
-    display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    text-align: center; /* Alinha o texto no centro */
-    overflow: hidden;
+    z-index: 1;
 }
 
-/* Camada escura sobre a imagem de fundo */
-#inicio::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Camada escura com opacidade de 0.7 */
-    z-index: 0; /* Garante que a camada escura fique atrás do conteúdo */
-}
-
-/* Overlay para o conteúdo */
-.overlay {
-    position: absolute; /* Permite o posicionamento absoluto dentro do container */
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o conteúdo mais precisamente */
-    z-index: 1; /* Garante que o conteúdo fique acima da camada escura */
-    background-color: rgba(0, 0, 0, 0.5); /* Camada de fundo com opacidade para o conteúdo */
-    padding: 20px;
-    border-radius: 10px;
-    width: auto; /* Ajusta automaticamente a largura conforme o conteúdo */
-    max-width: 800px; /* Limita a largura máxima */
-    text-align: center; /* Alinha o texto ao centro */
-}
-h1 {
-    font-size: 2.5rem; /* Tamanho do título */
-    margin-bottom: 10px;
-    white-space: nowrap; /* Impede a quebra de linha */
-    font-weight: bold; /* Dá destaque ao título */
-    text-align: left; /* Alinha o texto à esquerda */
-    margin-left: -120px; /* Ajuste ainda maior para a esquerda */
-    width: 100%; /* Garante que o título ocupe toda a largura */
-    display: block; /* Faz o título ocupar toda a largura do container */
-}
-
-
-
-h2 {
-    font-size: 2.5rem; /* Tamanho do subtítulo */
-    margin-top: 10px;
+#inicio h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
-    max-width: 100%; /* Permite que o subtítulo ocupe toda a largura disponível */
-    text-align: center; /* Centraliza o texto */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-    font-weight: normal; /* Remove negrito do subtítulo */
-    color: rgba(255, 255, 255, 0.8); /* Cor do subtítulo */
-    display: block; /* Garante que o subtítulo ocupe toda a largura disponível */
+    color: white;
 }
 
-
-/* Estilo para a navegação de paginação */
-.pagination {
-    position: absolute; /* Coloca a numeração sobre o rodapé */
-    bottom: 10px; /* Distância do rodapé */
-    left: 50%; /* Alinha horizontalmente no centro */
-    transform: translateX(-50%); /* Ajusta para garantir que esteja centralizado */
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+#inicio p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.pagination .page {
-    padding: 10px 15px;
-    background-color: #4CAF50;
+#inicio .cta-button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: #28a745;
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.pagination .page:hover {
-    background-color: #45a049;
+#inicio .cta-button:hover {
+    background-color: #218838;
 }
 
-footer {
+/* Seção sobre Spoofing */
+#sobre-spoofing .card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    max-width: 1200px;
+    width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sobre-spoofing .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    border: 2px solid #28a745;
+}
+
+.card h1, .card h2 {
     text-align: center;
-    padding: 20px 0; /* Aumenta o padding para dar mais altura ao rodapé */
-    background-color: #000; /* Preto */
     color: white;
-    margin-top: 0; /* Remove a margem superior do rodapé */
+}
+
+.card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estilo dos cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-container .card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    border: 2px solid #28a745;
+}
+
+.card-container .card h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card-container .card p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+}
+
+/* Paginação (movido para cima do rodapé) */
+.pagination-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Distância da seção de conteúdo acima */
+    z-index: 2; /* Garantir que fique acima do fundo */
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination a {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #218838;
+}
+
+.pagination a.active {
+    background-color: #155724;
+    color: white;
+}
+
+.pagination a:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.pagination a:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px; /* Garantir que o rodapé não se sobreponha à paginação */
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav ul li a:hover {
+    color: #28a745;
 }

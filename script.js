@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Efeito de animação no botão (quando o usuário passa o mouse sobre o botão)
-// Remove a parte do código, pois não há botão com a classe '.btn'
 document.addEventListener("DOMContentLoaded", function () {
     const btn = document.querySelector('.btn'); // Se tiver um botão específico no HTML
     if (btn) {
@@ -34,20 +33,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Navegação de Paginação (Simula a troca de conteúdo entre as páginas)
+// Navegação de Paginação (Redirecionamento para as páginas)
 document.addEventListener("DOMContentLoaded", function () {
     const paginationLinks = document.querySelectorAll('.pagination .page');
     
     paginationLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
-            event.preventDefault();
-            
-            const pageNumber = link.textContent; // Obtém o número da página clicada
-            alert(`Página ${pageNumber} clicada! (Aqui você pode carregar o conteúdo da página)`);
+            event.preventDefault(); // Impede o comportamento padrão do link (recarregar a página)
 
-            // Aqui você pode adicionar a lógica para carregar o conteúdo específico da página
-            // Exemplo: mudar a URL, alterar o conteúdo da página, etc.
-            // window.location.href = `pagina${pageNumber}.html`; // Para navegar para outra página
+            const pageNumber = link.textContent; // Obtém o número da página clicada
+
+            // Mapeando os números das páginas para os arquivos HTML correspondentes
+            let pageURL = '';
+            switch (pageNumber) {
+                case '1':
+                    pageURL = 'index.html';  // Página inicial
+                    break;
+                case '2':
+                    pageURL = 'spoofing.html';  // O que é Spoofing?
+                    break;
+                case '3':
+                    pageURL = 'resultados.html';  // Resultados
+                    break;
+                case '4':
+                    pageURL = 'quemsomos.html';  // Quem Somos
+                    break;
+                default:
+                    pageURL = 'index.html';  // Padrão para a primeira página
+            }
+
+            // Redireciona para a página correspondente
+            window.location.href = pageURL;
         });
     });
 });
