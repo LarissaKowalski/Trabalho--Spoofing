@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     pageURL = 'resultados.html';  // Resultados
                     break;
                 case '4':
-                    pageURL = 'quemsomos.html';  // Quem Somos
+                    pageURL = 'quem_somos.html';  // Quem Somos
                     break;
                 default:
                     pageURL = 'index.html';  // Padrão para a primeira página
