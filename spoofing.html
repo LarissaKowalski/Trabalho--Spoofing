@@ -13,57 +13,46 @@
       <div class="logo-container">
         <img src="assets/imagemlogo.png" alt="Logo" class="logo" />
       </div>
+
       <nav>
         <div class="nav-buttons">
           <button onclick="window.location.href='index.html'">Início</button>
-          <button onclick="window.location.href='spoofing.html'">
-            O que é Spoofing?
-          </button>
-          <button onclick="window.location.href='resultados.html'">
-            Resultados
-          </button>
-          <button onclick="window.location.href='quem_somos.html'">
-            Quem Somos
-          </button>
+          <button onclick="window.location.href='spoofing.html'">O que é Spoofing?</button>
+          <button onclick="window.location.href='resultados.html'">Resultados</button>
+          <button onclick="window.location.href='quem_somos.html'">Quem Somos</button>
         </div>
       </nav>
     </header>
 
     <main>
-      <div class="card-container-um">
+      <section id="sobre-spoofing">
         <div class="card">
-          <h1>O que é Spoofing?</h1>
-          <p>
-            Spoofing é uma técnica cibernética utilizada para falsificar a
-            identidade de uma pessoa ou dispositivo, com o objetivo de enganar
-            sistemas ou usuários, fazendo-os acreditar que a comunicação está
-            vindo de uma fonte confiável. O termo deriva do verbo inglês "to
-            spoof", que significa "enganar" ou "falsificar". No contexto de
-            segurança digital, spoofing pode ocorrer em diversas formas, como
-            falsificação de endereços de IP, de emails, de websites, de chamadas
-            telefônicas, entre outras formas.
-          </p>
+            <h1>O que é Spoofing?</h1>
+            <p> Spoofing é uma técnica cibernética utilizada para falsificar a
+              identidade de uma pessoa ou dispositivo, com o objetivo de enganar
+              sistemas ou usuários, fazendo-os acreditar que a comunicação está
+              vindo de uma fonte confiável. O termo deriva do verbo inglês "to
+              spoof", que significa "enganar" ou "falsificar.</p>
         </div>
-      </div>
-      <!-- Card para Tipos de Spoofing -->
+    </section>
+    
+
       <div class="card-container">
         <div class="card">
           <h1>Tipos de Spoofing</h1>
           <p>
-            Confira abaixo os principais tipos de spoofing e suas
-            características:
+            Confira abaixo os principais tipos de spoofing e suas características:
           </p>
         </div>
       </div>
 
-      <!-- Cards para cada tipo de spoofing -->
       <div class="card-container">
         <div class="card">
           <h1>IP Spoofing</h1>
           <p>
             Consiste em mascarar o endereço IP de origem, fazendo com que o
             sistema-alvo acredite que está se comunicando com um dispositivo
-            legítimo,quando na verdade está interagindo com um atacante.
+            legítimo, quando na verdade está interagindo com um atacante.
           </p>
         </div>
         <div class="card">
@@ -100,7 +89,6 @@
         </div>
       </div>
 
-      <!-- Seção Casos de Spoofing no Brasil -->
       <div class="card-container">
         <div class="card">
           <h1>Casos de Spoofing no Brasil</h1>
@@ -110,7 +98,6 @@
         </div>
       </div>
 
-      <!-- Cards para cada caso de spoofing no Brasil -->
       <div class="card-container">
         <div class="card">
           <h2>Caso Vaza Jato (2019)</h2>
@@ -120,22 +107,17 @@
             conhecido como o "Caso Vaza Jato". Nesse episódio, hackers
             utilizaram técnicas de spoofing para interceptar e acessar mensagens
             de autoridades do governo brasileiro e membros da operação Lava
-            Jato, incluindo o então juiz Sérgio Moro e procuradores do
-            Ministério Público Federal.
+            Jato.
           </p>
         </div>
 
         <div class="card">
-          <h2>Detalhes do Caso Vaza Jato</h2>
+          <h2>Caso de Spoofing em Redes Sociais (Facebook)</h2>
           <p>
-            Os invasores mascararam seus números de telefone para se passar por
-            contatos confiáveis, conseguindo assim obter acesso a comunicações
-            privadas via o aplicativo Telegram. Esse caso gerou grande
-            repercussão nacional, levantando questões sobre a segurança digital
-            das comunicações governamentais e privadas no Brasil. Além disso,
-            trouxe à tona discussões sobre os limites da privacidade, ética no
-            uso de informações vazadas e o impacto do cibercrime no cenário
-            político do país.
+            Em 2020, um grupo de criminosos foi desmantelado após criar perfis
+            falsos de celebridades e figuras públicas para enganar seguidores.
+            Eles pediram doações ou compartilharam links que redirecionaram
+            usuários para sites fraudulentos.
           </p>
         </div>
 
@@ -146,27 +128,62 @@
             empresa de telefonia Oi foi alvo de um ataque de caller ID spoofing,
             resultando em tentativas de golpe financeiro. Os criminosos faziam
             ligações se passando por atendentes da operadora, solicitando
-            informações bancárias e dados pessoais dos clientes. Esse incidente
-            evidenciou a necessidade de reforçar a segurança em sistemas de
-            telecomunicações.
+            informações bancárias e dados pessoais dos clientes.
           </p>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <h1>Dicas de como se prevenir contra golpes de spoofing</h1>
+          <p>
+            Para evitar esses golpes, é essencial adotar algumas práticas
+            preventivas. A seguir, listamos dicas importantes para aumentar sua
+            proteção:
+          </p>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <h1>Verifique sempre os detalhes de contato</h1>
+          <p>
+            Não confie em chamadas telefônicas, e-mails ou mensagens de texto de
+            fontes desconhecidas. Se a comunicação parecer suspeita, entre em
+            contato diretamente com a empresa ou instituição usando canais
+            oficiais.
+          </p>
+        </div>
+        <div class="card">
+          <h1>Use Autenticação de Dois Fatores (2FA)</h1>
+          <p>
+            Habilitar a autenticação de dois fatores em suas contas pode adicionar
+            uma camada extra de segurança. Mesmo que sua senha esteja comprometida,
+            os golpistas não poderão acessar suas contas sem o segundo fator.
+          </p>
+        </div>
+        <div class="card">
+          <h1>Não Clique em Links Suspeitos</h1>
+          <p>
+            Evite clicar em links recebidos por e-mail ou mensagens de texto de
+            fontes desconhecidas. Passe o cursor sobre os links para verificar se o
+            endereço é legítimo e não parece estranho ou disfarçado.
+          </p>
+        </div>
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination-container">
+        <div class="pagination">
+          <a href="index.html">&laquo; Anterior</a>
+          <a href="resultados.html">Próximo &raquo;</a>
         </div>
       </div>
     </main>
 
-    <!-- Paginação -->
-    <div class="pagination-container">
-      <div class="pagination">
-        <a href="index.html">&laquo; Anterior</a>
-        <a href="resultados.html" class="page">Próximo &raquo;</a>
-      </div>
-    </div>
-
-    <!-- Rodapé -->
+    <!-- Rodapé fora da tela, posicionado abaixo da paginação -->
     <footer>
-      <div class="footer-content">
-        <p>&copy; 2024 Site sobre Spoofing. Todos os direitos reservados.</p>
-      </div>
+      <p>&copy;Proteja suas informações: segurança digital é o primeiro passo para uma navegação tranquila.</p>
     </footer>
   </body>
 </html>
