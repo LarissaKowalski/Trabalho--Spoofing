@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spoofing</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="assets/imagemlogo.png">
+    <link rel="icon" type="image/png" href="assets/imagemlogo.png" />
   </head>
+
   <body>
     <header>
       <div class="logo-container">
         <img src="assets/imagemlogo.png" alt="Logo" class="logo" />
       </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="spoofing.html">O que é Spoofing?</a></li>
-          <li><a href="resultados.html">Resultados</a></li>
-          <li><a href="quem_somos.html">Quem Somos</a></li>
-        </ul>
+        <div class="nav-buttons">
+          <button onclick="window.location.href='index.html'">Início</button>
+          <button onclick="window.location.href='spoofing.html'">
+            O que é Spoofing?
+          </button>
+          <button onclick="window.location.href='resultados.html'">
+            Resultados
+          </button>
+          <button onclick="window.location.href='quem_somos.html'">
+            Quem Somos
+          </button>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section id="sobre-spoofing">
+      <div class="card-container-um">
         <div class="card">
           <h1>O que é Spoofing?</h1>
           <p>
@@ -37,13 +44,15 @@
             telefônicas, entre outras formas.
           </p>
         </div>
-      </section>
-
+      </div>
       <!-- Card para Tipos de Spoofing -->
       <div class="card-container">
         <div class="card">
           <h1>Tipos de Spoofing</h1>
-          <p>Confira abaixo os principais tipos de spoofing e suas características:</p>
+          <p>
+            Confira abaixo os principais tipos de spoofing e suas
+            características:
+          </p>
         </div>
       </div>
 
@@ -51,28 +60,43 @@
       <div class="card-container">
         <div class="card">
           <h1>IP Spoofing</h1>
-          <p>Consiste em mascarar o endereço IP de origem, fazendo com que o sistema-alvo acredite que está se comunicando 
-          com um dispositivo legítimo,quando na verdade está interagindo com um atacante.</p>
+          <p>
+            Consiste em mascarar o endereço IP de origem, fazendo com que o
+            sistema-alvo acredite que está se comunicando com um dispositivo
+            legítimo,quando na verdade está interagindo com um atacante.
+          </p>
         </div>
         <div class="card">
           <h1>Email Spoofing</h1>
-          <p>Nesse caso, o atacante altera o campo de remetente de um email para parecer que vem de uma fonte confiável, 
-          com o intuito de enganar o destinatário para obter informações sensíveis.</p>
+          <p>
+            Nesse caso, o atacante altera o campo de remetente de um email para
+            parecer que vem de uma fonte confiável, com o intuito de enganar o
+            destinatário para obter informações sensíveis.
+          </p>
         </div>
         <div class="card">
           <h1>DNS Spoofing</h1>
-          <p>Também chamado de envenenamento de cache DNS, esse tipo de ataque redireciona o tráfego 
-          de um site legítimo para um site malicioso sem que o usuário perceba.</p>
+          <p>
+            Também chamado de envenenamento de cache DNS, esse tipo de ataque
+            redireciona o tráfego de um site legítimo para um site malicioso sem
+            que o usuário perceba.
+          </p>
         </div>
         <div class="card">
           <h1>ARP Spoofing</h1>
-          <p>Usando a falsificação de mensagens ARP em uma rede local, o invasor vincula seu endereço
-           MAC a um endereço IP de outro dispositivo na rede, interceptando os dados.</p>
+          <p>
+            Usando a falsificação de mensagens ARP em uma rede local, o invasor
+            vincula seu endereço MAC a um endereço IP de outro dispositivo na
+            rede, interceptando os dados.
+          </p>
         </div>
         <div class="card">
           <h1>Caller ID Spoofing</h1>
-          <p>Envolve a falsificação de números de telefone, permitindo que os invasores pareçam estar
-         ligando de um número confiável. É comum em golpes por telefone.</p>
+          <p>
+            Envolve a falsificação de números de telefone, permitindo que os
+            invasores pareçam estar ligando de um número confiável. É comum em
+            golpes por telefone.
+          </p>
         </div>
       </div>
 
@@ -80,7 +104,9 @@
       <div class="card-container">
         <div class="card">
           <h1>Casos de Spoofing no Brasil</h1>
-          <p>Confira alguns casos notórios de spoofing que aconteceram no Brasil:</p>
+          <p>
+            Confira alguns casos notórios de spoofing que aconteceram no Brasil:
+          </p>
         </div>
       </div>
 
@@ -89,33 +115,52 @@
         <div class="card">
           <h2>Caso Vaza Jato (2019)</h2>
           <p>
-            No Brasil, o spoofing ganhou notoriedade, especialmente após a revelação de um ataque cibernético em 2019, que ficou amplamente conhecido como o "Caso Vaza Jato". Nesse episódio, hackers utilizaram técnicas de spoofing para interceptar e acessar mensagens de autoridades do governo brasileiro e membros da operação Lava Jato, incluindo o então juiz Sérgio Moro e procuradores do Ministério Público Federal.
+            No Brasil, o spoofing ganhou notoriedade, especialmente após a
+            revelação de um ataque cibernético em 2019, que ficou amplamente
+            conhecido como o "Caso Vaza Jato". Nesse episódio, hackers
+            utilizaram técnicas de spoofing para interceptar e acessar mensagens
+            de autoridades do governo brasileiro e membros da operação Lava
+            Jato, incluindo o então juiz Sérgio Moro e procuradores do
+            Ministério Público Federal.
           </p>
         </div>
 
         <div class="card">
           <h2>Detalhes do Caso Vaza Jato</h2>
           <p>
-            Os invasores mascararam seus números de telefone para se passar por contatos confiáveis, conseguindo assim obter acesso a comunicações privadas via o aplicativo Telegram. Esse caso gerou grande repercussão nacional, levantando questões sobre a segurança digital das comunicações governamentais e privadas no Brasil. Além disso, trouxe à tona discussões sobre os limites da privacidade, ética no uso de informações vazadas e o impacto do cibercrime no cenário político do país.
+            Os invasores mascararam seus números de telefone para se passar por
+            contatos confiáveis, conseguindo assim obter acesso a comunicações
+            privadas via o aplicativo Telegram. Esse caso gerou grande
+            repercussão nacional, levantando questões sobre a segurança digital
+            das comunicações governamentais e privadas no Brasil. Além disso,
+            trouxe à tona discussões sobre os limites da privacidade, ética no
+            uso de informações vazadas e o impacto do cibercrime no cenário
+            político do país.
           </p>
         </div>
 
         <div class="card">
           <h2>Ataque à Oi (2020)</h2>
           <p>
-            Outro caso notável de spoofing ocorreu em 2020, quando o sistema da empresa de telefonia Oi foi alvo de um ataque de caller ID spoofing, resultando em tentativas de golpe financeiro. Os criminosos faziam ligações se passando por atendentes da operadora, solicitando informações bancárias e dados pessoais dos clientes. Esse incidente evidenciou a necessidade de reforçar a segurança em sistemas de telecomunicações.
+            Outro caso notável de spoofing ocorreu em 2020, quando o sistema da
+            empresa de telefonia Oi foi alvo de um ataque de caller ID spoofing,
+            resultando em tentativas de golpe financeiro. Os criminosos faziam
+            ligações se passando por atendentes da operadora, solicitando
+            informações bancárias e dados pessoais dos clientes. Esse incidente
+            evidenciou a necessidade de reforçar a segurança em sistemas de
+            telecomunicações.
           </p>
         </div>
       </div>
-
-      <!-- Paginação -->
-      <div class="pagination-container">
-        <div class="pagination">
-          <a href="index.html" class="page">&laquo; Anterior</a>
-          <a href="resultados.html" class="page">Próximo &raquo;</a>
-        </div>
-      </div>
     </main>
+
+    <!-- Paginação -->
+    <div class="pagination-container">
+      <div class="pagination">
+        <a href="index.html">&laquo; Anterior</a>
+        <a href="resultados.html" class="page">Próximo &raquo;</a>
+      </div>
+    </div>
 
     <!-- Rodapé -->
     <footer>
@@ -125,4 +170,3 @@
     </footer>
   </body>
 </html>
-

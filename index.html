@@ -8,18 +8,19 @@
     <link rel="icon" type="image/png" href="assets/imagemlogo.png">
 
 </head>
+
 <body>
     <header>
         <div class="logo-container">
-            <img src="assets/imagemlogo.png" alt="Logo" class="logo"> <!-- Logo no canto esquerdo -->
+            <img src="assets/imagemlogo.png" alt="Logo" class="logo" />
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html" style="color: rgb(246, 246, 247);">Início</a></li>
-                <li><a href="spoofing.html">O que é Spoofing?</a></li>
-                <li><a href="resultados.html">Resultados</a></li>
-                <li><a href="quem_somos.html">Quem Somos</a></li>
-            </ul>
+            <div class="nav-buttons">
+                <button onclick="window.location.href='index.html'">Início</button>
+                <button onclick="window.location.href='spoofing.html'">O que é Spoofing?</button>
+                <button onclick="window.location.href='resultados.html'">Resultados</button>
+                <button onclick="window.location.href='quem_somos.html'">Quem Somos</button>
+            </div>
         </nav>
     </header>
 
@@ -33,15 +34,15 @@
     <!-- Navegação de páginas -->
     <div class="pagination-container">
         <div class="pagination">
-            <a href="index.html" class="page">&laquo; Anterior</a>
+            <a href="index.html" >&laquo; Anterior</a>
             <!--
             <a href="spoofing.html">2</a>
             -->
-            <a  href="spoofing.html">Próximo</a>
+            <a  href="spoofing.html"  >Próximo &raquo;</a>
         </div>
     </div>
 
-        <footer>
+        <footer style="position:fixed; bottom:0; left: 0; width: 100%;">
             <p>&copy; 2024 Site sobre Spoofing. Todos os direitos reservados.</p>
         </footer>
         

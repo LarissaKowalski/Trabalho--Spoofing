@@ -15,14 +15,15 @@
             <img src="assets/imagemlogo.png" alt="Logo" class="logo" />
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="spoofing.html">O que é Spoofing?</a></li>
-                <li><a href="resultados.html">Resultados</a></li>
-                <li><a href="quem_somos.html">Quem Somos</a></li>
-            </ul>
+            <div class="nav-buttons">
+                <button onclick="window.location.href='index.html'">Início</button>
+                <button onclick="window.location.href='spoofing.html'">O que é Spoofing?</button>
+                <button onclick="window.location.href='resultados.html'">Resultados</button>
+                <button onclick="window.location.href='quem_somos.html'">Quem Somos</button>
+            </div>
         </nav>
     </header>
+    
 
     <!-- Seção Quem Somos -->
     <section id="quem-somos">
@@ -68,14 +69,16 @@
                 <p>Escritor.</p>
             </div>
         </div>
-        <div class="pagination-container">
-            <div class="pagination"> <a href="resultados.html" class="page"> Anterior</a> </div>
-        </div>
     </section>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Site sobre Spoofing. Todos os direitos reservados.</p>
+
+        <div class="pagination-container">
+            <div class="pagination">
+                 <a href="resultados.html" class="page">&laquo; Anterior</a> 
+                </div>
         </div>
+
+        <footer>
+            <p>&copy; 2024 Site sobre Spoofing. Todos os direitos reservados.</p>
     </footer>
 </body>
 
